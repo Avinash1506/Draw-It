@@ -87,10 +87,6 @@ document.addEventListener("mousedown", (e) => {
   }
 });
 const drawArea = document.querySelector("#canv");
-// drawArea.addEventListener("click", (e) => {
-//   isDraw = true;
-//   [lastX, lastY] = [e.offsetX, e.offsetY];
-// });
 function changeWidth() {
   canv.width = document.body.clientWidth;
 }
