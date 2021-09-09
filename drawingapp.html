@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@511&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@200&family=Sora:wght@511&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="drawingapp.css" />
+    <title>Draw It</title>
+  </head>
+  <body>
+    <div class="abovespace">
+      <canvas id="canv" class="box"></canvas>
+      <div class="smallbox">
+        <button class="dec">-</button>
+        <div class="size"></div>
+        <button class="inc">+</button>
+        <input type="color" class="colorPicked" height="48" />
+        <div class="heading">Draw It</div>
+        <button class="clear">X</button>
+        <button class="saveImage">Download</button>
+      </div>
+    </div>
+    <script src="drawingapp.js"></script>
+  </body>
+</html>
