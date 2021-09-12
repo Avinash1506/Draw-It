@@ -8,9 +8,6 @@ let canv = document.querySelector("#canv");
 canvCtx = canv.getContext("2d");
 canv.height = 800;
 canv.width = document.body.clientWidth;
-console.log(canv.width);
-console.log(canv.height);
-console.log(canvCtx);
 //we will draw on context and not on canvas
 canvCtx.lineJoin = "round"; //defines what should be the shape when two lines meet
 canvCtx.lineCap = "round"; //defines what should be the shape of the line at its corners
@@ -20,7 +17,6 @@ function decrease() {
   //this function will decrease the value of line width
   if (lineWidth == 1) return;
   else lineWidth--;
-  console.log(lineWidth);
   data.innerHTML = lineWidth;
   canvCtx.lineWidth = lineWidth;
 }
@@ -29,14 +25,12 @@ function increase() {
   //this function will increase the value of line width
   if (lineWidth == 50) return;
   else lineWidth++;
-  console.log(lineWidth);
   data.innerHTML = lineWidth;
   canvCtx.lineWidth = lineWidth;
 }
 
 function changeColor() {
   let data = color.value;
-  console.log(data);
   canvCtx.strokeStyle = data;
 }
 let isDraw = false; //used to check whether mouse is clicked or not
@@ -49,7 +43,6 @@ function draw(e) {
     canvCtx.lineTo(e.offsetX, e.offsetY);
     canvCtx.stroke();
     [lastX, lastY] = [e.offsetX, e.offsetY];
-    console.log(`${lastX} ${lastY}`);
   }
 }
 
